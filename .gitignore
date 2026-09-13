@@ -1,0 +1,15 @@
+# Ambiente Virtual
+venv/
+.venv/
+env/
+
+# Credenciais e Chaves de Segurança
+*.json
+
+# Cache do Python
+__pycache__/
+*.pyc
+
+# Configurações do VS Code e Jupyter Notebook
+.vscode/
+.ipynb_checkpoints/
