@@ -1,15 +1,12 @@
-# Ambiente Virtual
+# Ambiente virtual
 venv/
 .venv/
-env/
 
-# Credenciais e Chaves de Segurança
-*.json
+# Ignorar apenas chaves e credenciais específicas
+config/*.json
 
-# Cache do Python
+# Cache do Python e VS Code
 __pycache__/
 *.pyc
-
-# Configurações do VS Code e Jupyter Notebook
-.vscode/
 .ipynb_checkpoints/
+.vscode/
