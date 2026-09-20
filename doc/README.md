@@ -50,11 +50,11 @@ Para garantir o bom funcionamento do ambiente de desenvolvimento, execução de 
 
 ### 3. Estratégia de Tratamento de Nulos e Dados Ausentes
 
-* **Padronização na Origem do Fluxo**: Para evitar a perda de registos ou falhas de integridade referencial (NULL nas chaves estrangeiras), os valores nulos vindos da extração foram tratados no Pentaho utilizando o passo If field value is null, substituindo valores ausentes pelo padrão "Não informado" (para atributos de texto) e 0 (para campos numéricos).
+* **Padronização na Origem do Fluxo**: Para evitar a perda de registos ou falhas de integridade referencial (NULL nas chaves estrangeiras), os valores nulos vindos da extração foram tratados no Pentaho utilizando o passo (`If field value is null`), substituindo valores ausentes pelo padrão `"Não informado"` (para atributos de texto) e `0` (para campos numéricos).
 
-* **Registos de Contingência nas Dimensões**: As tabelas de dimensão possuem registos padrão (ex.: ID = 0 / "Não informado") para permitir a associação adequada de registos da facto que não possuam correspondência direta.
+* **Registos de Contingência nas Dimensões**: As tabelas de dimensão possuem registos padrão (ex.: ID = 0 / "Não informado") para permitir a associação adequada de registos da fato que não possuam correspondência direta.
 
-* **Fallback no Lookup (Default)**: Configurado o valor padrão 0 na opção Default dos passos de Database lookup para garantir a atribuição da chave de contingência em caso de não correspondência.
+* **Fallback no Lookup (Default)**: Configurado o `valor padrão 0` na opção `Default` dos passos de Database lookup para garantir a atribuição da chave de contingência em caso de não correspondência.
 
 ### 4. Garantia de Unicidade e Qualidade dos Dados
 
