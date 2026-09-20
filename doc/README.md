@@ -14,8 +14,6 @@ Este repositório contém os pipelines de ETL e a modelagem do Data Warehouse de
 
 Para garantir o bom funcionamento do ambiente de desenvolvimento, execução de consultas SQL e suporte a scripts/notebooks, foram utilizadas as seguintes extensões no VS Code:
 
-### Extensões
-
 | Extensão | Descrição / Finalidade |
 | :--- | :--- |
 | **SQLTools** | Executar e gerenciar consultas SQL no PostgreSQL diretamente no editor. |
