@@ -8,7 +8,7 @@ Este repositório contém os pipelines de ETL e a modelagem do Data Warehouse de
 * **Data Warehouse:** PostgreSQL / BigQuery
 * **IDE / Editor:** Visual Studio Code (VS Code)
 * **Linguagens & Formatos:** SQL, Python, Jupyter Notebook (`.ipynb`), CSV, Markdown
-[cite: 19]
+
 
 🔌 Extensões Utilizadas no VS Code
 
@@ -26,7 +26,7 @@ Para garantir o bom funcionamento do ambiente de desenvolvimento, execução de 
 | **Python Debugger** | Depuração e debugging de scripts Python. |
 | **Rainbow CSV** | Destaque colorido para colunas de arquivos .csv, facilitando a visualização dos dados. |
 | **GitLens** | Recursos extras e visibilidade avançada de commits para Git/GitHub/GitLab. |
-[cite: 18]
+
 
 
 
