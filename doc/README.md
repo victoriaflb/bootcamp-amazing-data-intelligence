@@ -70,7 +70,6 @@ Para garantir o bom funcionamento do ambiente de desenvolvimento, execução de 
 
 ### 4. Garantia de Unicidade e Qualidade dos Dados
 
-=======
 * **Registos de Contingência nas Dimensões**: As tabelas de dimensão possuem registos padrão (ex.: ID = 0 / "Não informado") para permitir a associação adequada de registos da fato que não possuam correspondência direta.
 
 * **Fallback no Lookup (Default)**: Configurado o `valor padrão 0` na opção `Default` dos passos de Database lookup para garantir a atribuição da chave de contingência em caso de não correspondência.
