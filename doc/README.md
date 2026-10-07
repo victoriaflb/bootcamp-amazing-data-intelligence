@@ -9,7 +9,17 @@ Este repositório contém os pipelines de ETL e a modelagem do Data Warehouse de
 * **IDE / Editor:** Visual Studio Code (VS Code)
 * **Linguagens & Formatos:** SQL, Python, Jupyter Notebook (`.ipynb`), CSV, Markdown
 
+## Credenciais do Google Cloud
 
+Este projeto acessa o Google Cloud (BigQuery) por meio de uma conta de serviço.
+Por segurança, o arquivo de credenciais **não está incluído** no repositório.
+
+Para executar o projeto:
+1. Crie uma conta de serviço no seu projeto do Google Cloud e gere uma chave JSON
+   (IAM e administrador → Contas de serviço → Chaves).
+2. Salve o arquivo como `config/academia-saude.json`
+   (use `config/academia-saude.example.json` como modelo de formato).
+3. Esse arquivo está no `.gitignore` e nunca deve ser enviado ao repositório.
 🔌 Extensões Utilizadas no VS Code
 
 Para garantir o bom funcionamento do ambiente de desenvolvimento, execução de consultas SQL e suporte a scripts/notebooks, foram utilizadas as seguintes extensões no VS Code:
