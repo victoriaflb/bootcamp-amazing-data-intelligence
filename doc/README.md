@@ -64,8 +64,6 @@ Para garantir o bom funcionamento do ambiente de desenvolvimento, execução de 
 
 * **Padronização na Origem do Fluxo**: Para evitar a perda de registos ou falhas de integridade referencial (NULL nas chaves estrangeiras), os valores nulos vindos da extração foram tratados no Pentaho utilizando o passo (`If field value is null`), substituindo valores ausentes pelo padrão `"Não informado"` (para atributos de texto) e `0` (para campos numéricos).
 
-<<<<<<< HEAD
-
 * **Registos de Contingência nas Dimensões**: As tabelas de dimensão possuem registos padrão (ex.: ID = 0 / "Não informado") para permitir a associação adequada de registos da fato que não possuam correspondência direta.
 
 * **Fallback no Lookup (Default)**: Configurado o `valor padrão 0` na opção `Default` dos passos de Database lookup para garantir a atribuição da chave de contingência em caso de não correspondência.
@@ -79,5 +77,4 @@ Para garantir o bom funcionamento do ambiente de desenvolvimento, execução de 
 
 ### 4. Garantia de Unicidade e Qualidade dos Dados
 
->>>>>>> 55a27c059ef7b7b20b106fd0b6cb614b56cf5660
 * **Desduplicação nas Dimensões**: Aplicação sequencial dos passos `Sort rows` e `Unique rows` no fluxo de carregamento de cada dimensão no Pentaho, assegurando a eliminação de duplicados com base na chave de negócio antes da gravação no DW.
