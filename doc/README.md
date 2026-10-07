@@ -1,4 +1,4 @@
-### 📊 Data Warehouse - Análise de Saúde e Atividade Física
+# 📊 Data Warehouse - Análise de Saúde e Atividade Física
 
 Este repositório contém os pipelines de ETL e a modelagem do Data Warehouse desenvolvidos no Pentaho Data Integration (Spoon) para o projeto de análise de dados de saúde e atividade física.
 
