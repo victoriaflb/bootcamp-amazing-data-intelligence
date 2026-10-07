@@ -20,7 +20,24 @@ Para executar o projeto:
 2. Salve o arquivo como `config/academia-saude.json`
    (use `config/academia-saude.example.json` como modelo de formato).
 3. Esse arquivo está no `.gitignore` e nunca deve ser enviado ao repositório.
-🔌 Extensões Utilizadas no VS Code
+
+## Crie config/academia-saude.example.json com o mesmo formato:
+json
+{
+  "type": "service_account",
+  "project_id": "seu-projeto",
+  "private_key_id": "SEU_PRIVATE_KEY_ID",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nSUA_CHAVE_PRIVADA\n-----END PRIVATE KEY-----\n",
+  "client_email": "sua-conta@seu-projeto.iam.gserviceaccount.com",
+  "client_id": "SEU_CLIENT_ID",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/...",
+  "universe_domain": "googleapis.com"
+}
+
+##🔌 Extensões Utilizadas no VS Code
 
 Para garantir o bom funcionamento do ambiente de desenvolvimento, execução de consultas SQL e suporte a scripts/notebooks, foram utilizadas as seguintes extensões no VS Code:
 
@@ -62,7 +79,6 @@ Para garantir o bom funcionamento do ambiente de desenvolvimento, execução de 
 
 * **Padronização na Origem do Fluxo**: Para evitar a perda de registos ou falhas de integridade referencial (NULL nas chaves estrangeiras), os valores nulos vindos da extração foram tratados no Pentaho utilizando o passo (`If field value is null`), substituindo valores ausentes pelo padrão `"Não informado"` (para atributos de texto) e `0` (para campos numéricos).
 
-<<<<<<< HEAD
 
 * **Registos de Contingência nas Dimensões**: As tabelas de dimensão possuem registos padrão (ex.: ID = 0 / "Não informado") para permitir a associação adequada de registos da fato que não possuam correspondência direta.
 
@@ -70,12 +86,4 @@ Para garantir o bom funcionamento do ambiente de desenvolvimento, execução de 
 
 ### 4. Garantia de Unicidade e Qualidade dos Dados
 
-=======
-* **Registos de Contingência nas Dimensões**: As tabelas de dimensão possuem registos padrão (ex.: ID = 0 / "Não informado") para permitir a associação adequada de registos da fato que não possuam correspondência direta.
-
-* **Fallback no Lookup (Default)**: Configurado o `valor padrão 0` na opção `Default` dos passos de Database lookup para garantir a atribuição da chave de contingência em caso de não correspondência.
-
-### 4. Garantia de Unicidade e Qualidade dos Dados
-
->>>>>>> 55a27c059ef7b7b20b106fd0b6cb614b56cf5660
 * **Desduplicação nas Dimensões**: Aplicação sequencial dos passos `Sort rows` e `Unique rows` no fluxo de carregamento de cada dimensão no Pentaho, assegurando a eliminação de duplicados com base na chave de negócio antes da gravação no DW.

@@ -15,7 +15,25 @@ Para executar o projeto:
 2. Salve o arquivo como `config/academia-saude.json`
    (use `config/academia-saude.example.json` como modelo de formato).
 3. Esse arquivo está no `.gitignore` e nunca deve ser enviado ao repositório.
-🔌 Extensões Utilizadas no VS Code
+
+
+
+## Crie config/academia-saude.example.json com o mesmo formato:
+
+json
+{
+  "type": "service_account",
+  "project_id": "seu-projeto",
+  "private_key_id": "SEU_PRIVATE_KEY_ID",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nSUA_CHAVE_PRIVADA\n-----END PRIVATE KEY-----\n",
+  "client_email": "sua-conta@seu-projeto.iam.gserviceaccount.com",
+  "client_id": "SEU_CLIENT_ID",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/...",
+  "universe_domain": "googleapis.com"
+}
 
 ## 📂 Estrutura do Repositório
 
