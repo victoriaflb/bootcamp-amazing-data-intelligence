@@ -4,6 +4,19 @@ Este repositório contém o projeto completo de Engenharia e Análise de Dados d
 
 ---
 
+## Credenciais do Google Cloud
+
+Este projeto acessa o Google Cloud (BigQuery) por meio de uma conta de serviço.
+Por segurança, o arquivo de credenciais **não está incluído** no repositório.
+
+Para executar o projeto:
+1. Crie uma conta de serviço no seu projeto do Google Cloud e gere uma chave JSON
+   (IAM e administrador → Contas de serviço → Chaves).
+2. Salve o arquivo como `config/academia-saude.json`
+   (use `config/academia-saude.example.json` como modelo de formato).
+3. Esse arquivo está no `.gitignore` e nunca deve ser enviado ao repositório.
+🔌 Extensões Utilizadas no VS Code
+
 ## 📂 Estrutura do Repositório
 
 ```text
