@@ -39,7 +39,7 @@ Para executar o projeto:
 }
 ```
 
-##🔌 Extensões Utilizadas no VS Code
+## 🔌 Extensões Utilizadas no VS Code
 
 Para garantir o bom funcionamento do ambiente de desenvolvimento, execução de consultas SQL e suporte a scripts/notebooks, foram utilizadas as seguintes extensões no VS Code:
 
