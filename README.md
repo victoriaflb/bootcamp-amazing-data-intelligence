@@ -15,7 +15,6 @@ Para executar o projeto:
 2. Salve o arquivo como `config/academia-saude.json`
    (use `config/academia-saude.example.json` como modelo de formato).
 3. Esse arquivo está no `.gitignore` e nunca deve ser enviado ao repositório.
-🔌 Extensões Utilizadas no VS Code
 
 ## 📂 Estrutura do Repositório
 
