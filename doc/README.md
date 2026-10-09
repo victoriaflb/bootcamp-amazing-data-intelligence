@@ -39,6 +39,8 @@ Para executar o projeto:
 }
 ```
 
+- A tabela fato possui granularidade individual, com um registro por pessoa pesquisada na base utilizada da PNAD 2015. Ela centraliza as informações relacionadas à prática de atividade física e às características demográficas, domiciliares, geográficas e ocupacionais dos indivíduos. As dimensões permitem analisar essas informações por diferentes perspectivas.
+
 ## 🔌 Extensões Utilizadas no VS Code
 
 Para garantir o bom funcionamento do ambiente de desenvolvimento, execução de consultas SQL e suporte a scripts/notebooks, foram utilizadas as seguintes extensões no VS Code:
