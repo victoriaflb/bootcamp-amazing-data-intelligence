@@ -4,7 +4,7 @@
 
 -- DROP TABLE dw_academia_saude.dw_academia;
 
-CREATE TABLE dw_academia_saude.dw_academia (
+CREATE TABLE dw_academia (
 	ano_de_referencia varchar(10) NULL,
 	mes_de_referencia varchar(10) NULL,
 	unidade_da_federacao varchar(100) NULL,

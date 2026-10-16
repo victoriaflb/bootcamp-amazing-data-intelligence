@@ -4,7 +4,7 @@
 
 -- DROP TABLE dw_academia_saude.fato_atividade_fisica;
 
-CREATE TABLE dw_academia_saude.fato_atividade_fisica (
+CREATE TABLE fato_atividade_fisica (
 	numero_de_controle varchar(65535) NULL,
 	numero_de_serie varchar(65535) NULL,
 	numero_de_ordem varchar(65535) NULL,
